@@ -34,10 +34,10 @@ class Person: NSObject, Identifiable {
     
     static func getContactList(_ idx: Int) -> Person {
         
-        let names = DataManager.shared.names.shuffled()
-        let surnames = DataManager.shared.surnames.shuffled()
-        let emails = DataManager.shared.emails.shuffled()
-        let phones = DataManager.shared.phones.shuffled()
+        let names = DataManager.shared.names
+        let surnames = DataManager.shared.surnames
+        let emails = DataManager.shared.emails
+        let phones = DataManager.shared.phones
         
         let name = names[Int.random(in: 0..<names.count)]
         let surname = surnames[Int.random(in: 0..<surnames.count)]
